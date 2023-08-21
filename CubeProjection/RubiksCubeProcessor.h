@@ -123,10 +123,10 @@ private:
     std::vector<int> edgePos = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
     std::vector<int> edgeOrientation = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-    std::string fileNamePhase1 = "phase1.txt";
-    std::string fileNamePhase2 = "phase2.txt";
-    std::string fileNamePhase3 = "phase3.txt";
-    std::string fileNamePhase4 = "phase4.txt";
+    std::string fileNamePhase1 = "Tables/phase1.txt";
+    std::string fileNamePhase2 = "Tables/phase2.txt";
+    std::string fileNamePhase3 = "Tables/phase3.txt";
+    std::string fileNamePhase4 = "Tables/phase4.txt";
 
     std::unordered_map<int64_t, std::vector<int>> phase1Map;
     std::unordered_map<int64_t, std::vector<int>> phase2Map;
