@@ -1773,32 +1773,15 @@ std::vector<int> RubiksCubeProcessor::solveMoves()
         updateCornerMapAndPermutation(cornerMap, cornerPermutation, cornerFinderMap, cornerNames, cornerPos, cornerOrientation);
         updateEdgeMapAndPermutation(edgeMap, edgePermutation, edgeFinderMap, edgeNames, edgePos, edgeOrientation);
 
-
-        //std::cout << "Corner Position and Orientation: " << std::endl;
-        //for (int i = 0; i < cornerPos.size(); i++)
-        //{
-        //    std::cout << i << ": " << cornerPos[i] << " -> Orientation: " << cornerOrientation[i] << std::endl;
-        //}
-        //std::cout << std::endl;
-
-        //std::cout << std::endl;
-        //std::cout << "Edge Position and Orientation: " << std::endl;
-        //for (int i = 0; i < edgePos.size(); i++)
-        //{
-        //    std::cout << i << ": " << edgePos[i] << " -> Orientation: " << edgeOrientation[i] << std::endl;
-        //}
-        //std::cout << std::endl;
-
-        //std::cout << "phaseCount = " << phaseCount << std::endl;
-        //std::cout << std::endl;
-
+        std::cout << "Phase ID = " << phaseID << "; phaseCount = " << phaseCount << std::endl;
         std::cout << "HERE" << std::endl;
+        std::cout << std::endl;
 
 
         if ((phaseID == 0 || phaseID == 5592320) && phaseCount >= 4) {
+            std::cout << "Broke from phase" << std::endl;
             break;
         }
-
         else if (phaseID == 0 || phaseID == 5592320)
         {
             phaseCount++;

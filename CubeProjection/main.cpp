@@ -228,6 +228,11 @@ int main() {
 						std::cout << d << ", ";
 					}
 					currentMove = -3;
+
+					if (solutions.empty())
+					{
+						currentMove = -1;
+					}
 				}
 				else if (event.key.code == sf::Keyboard::A)
 				{
