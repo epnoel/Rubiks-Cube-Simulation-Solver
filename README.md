@@ -46,3 +46,5 @@ The Arduino code is located in the ArduinoSetup folder.
 
 ![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/Screenshots/Rubiks2.png?)
 
+![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/Screenshots/RubiksGIF1.gif)
+
