@@ -21,7 +21,7 @@ int main() {
 	float fCameraZoom = 86.0f; // was 16.f
 
 	vCameraPos *= fCameraZoom;
-	std::cout << "vCameraPos = (" << vCameraPos.x << "," << vCameraPos.y << ")" << std::endl;
+	//std::cout << "vCameraPos = (" << vCameraPos.x << "," << vCameraPos.y << ")" << std::endl;
 
 
 	sf::Image* greenSquare, * blueSquare, * redSquare, * orangeSquare, * whiteSquare, * yellowSquare, *blackSquare;
@@ -170,10 +170,8 @@ int main() {
 	bool stopAllRot = false;
 
 	std::stack<int> randomMoves;
-	// shuffleCube(randomMoves, RubiksCubeProcessor.moveNumbersAndOpposites, 37);
 
 	std::queue<int> solutions;
-	//for (auto d : rubik)
 	bool solveMode = false;
 	int currentMove = -1;
 
@@ -225,7 +223,7 @@ int main() {
 					for (auto d : RubiksCubeProcessor.solveMoves())
 					{
 						solutions.push(d);
-						std::cout << d << ", ";
+						//std::cout << d << ", ";
 					}
 					currentMove = -3;
 
@@ -242,12 +240,12 @@ int main() {
 				else if (event.key.code == sf::Keyboard::P)
 				{
 					fCameraAngle += 0.05f;
-					std::cout << "fCameraAngle = " << fCameraAngle << std::endl;
+					//std::cout << "fCameraAngle = " << fCameraAngle << std::endl;
 				}
 				else if (event.key.code == sf::Keyboard::Q)
 				{
 					fCameraAngle -= 0.05f;
-					std::cout << "fCameraAngle = " << fCameraAngle << std::endl;
+					//std::cout << "fCameraAngle = " << fCameraAngle << std::endl;
 				}
 			}
 			else if (event.type == sf::Event::KeyPressed)
@@ -255,12 +253,12 @@ int main() {
 				if (event.key.code == sf::Keyboard::P)
 				{
 					fCameraAngle += 0.05f;
-					std::cout << "fCameraAngle = " << fCameraAngle << std::endl;
+					//std::cout << "fCameraAngle = " << fCameraAngle << std::endl;
 				}
 				else if (event.key.code == sf::Keyboard::Q)
 				{
 					fCameraAngle -= 0.05f;
-					std::cout << "fCameraAngle = " << fCameraAngle << std::endl;
+					//std::cout << "fCameraAngle = " << fCameraAngle << std::endl;
 				}
 			}
 		}
@@ -755,7 +753,7 @@ int main() {
 				arbitraryAngleAmount += 3.14159f / 25.f; // was 3.14159f / 100.f
 			}
 			else {
-				std::cout << "solutions.front() = " << solutions.front() << std::endl;
+				//std::cout << "solutions.front() = " << solutions.front() << std::endl;
 
 				arbitraryAngleAmount = 0.f;
 				RubiksCubeProcessor.rotateCubeString(solutions.front());
@@ -791,7 +789,7 @@ int main() {
 			}
 			else {
 
-				std::cout << "randomMoves.top() = " << randomMoves.top() << std::endl;
+				//std::cout << "randomMoves.top() = " << randomMoves.top() << std::endl;
 
 				arbitraryAngleAmount = 0.f;
 				RubiksCubeProcessor.rotateCubeString(randomMoves.top());
@@ -891,8 +889,8 @@ int main() {
 				visibleFaces[i].texture1->loadFromImage(transparentPixel);
 
 				// Debug
-				std::cout << "otherEditImage3.size() = (" << otherEditImage3.getSize().x << "," << otherEditImage3.getSize().y << ")" << std::endl;
-				std::cout << "imagePos3 = (" << imagePos3.x << "," << imagePos3.y << ")" << std::endl;
+				//std::cout << "otherEditImage3.size() = (" << otherEditImage3.getSize().x << "," << otherEditImage3.getSize().y << ")" << std::endl;
+				//std::cout << "imagePos3 = (" << imagePos3.x << "," << imagePos3.y << ")" << std::endl;
 			}
 
 			//sf::Vector2f imagePos4;

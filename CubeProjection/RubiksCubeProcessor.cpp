@@ -210,16 +210,16 @@ void RubiksCubeProcessor::loadInPhaseTables()
 {
     // Phase Tables
     loadPhaseTable(fileNamePhase1, phase1Map);
-    std::cout << "Loaded Phase 1 -> size = " << phase1Map.size() << std::endl;
+    //std::cout << "Loaded Phase 1 -> size = " << phase1Map.size() << std::endl;
 
     loadPhaseTable(fileNamePhase2, phase2Map);
-    std::cout << "Loaded Phase 2 -> size = " << phase2Map.size() << std::endl;
+    //std::cout << "Loaded Phase 2 -> size = " << phase2Map.size() << std::endl;
 
     loadPhaseTable(fileNamePhase3, phase3Map);
-    std::cout << "Loaded Phase 3 -> size = " << phase3Map.size() << std::endl;
+    //std::cout << "Loaded Phase 3 -> size = " << phase3Map.size() << std::endl;
 
     loadPhaseTable(fileNamePhase4, phase4Map);
-    std::cout << "Loaded Phase 4 -> size = " << phase4Map.size() << std::endl;
+    //std::cout << "Loaded Phase 4 -> size = " << phase4Map.size() << std::endl;
 }
 
 std::string RubiksCubeProcessor::getCubeCode()
@@ -943,8 +943,8 @@ void RubiksCubeProcessor::loadInEdgePermutation(std::unordered_map<int, std::vec
 
     // Debug
     if (mPerm.size() != 12) {
-        std::cout << "mPerm.size() = " << mPerm.size() << std::endl;
-        std::cout << "s = " << cubeCode << std::endl;
+        //std::cout << "mPerm.size() = " << mPerm.size() << std::endl;
+        //std::cout << "s = " << cubeCode << std::endl;
     }
 
 }
@@ -1634,22 +1634,22 @@ int64_t	RubiksCubeProcessor::idPhase4(std::vector<std::string> cornerNames, std:
 
 void RubiksCubeProcessor::printOrientationAndPermutationInfo()
 {
-    std::cout << "string = " << cubeCode << std::endl;
-    std::cout << std::endl;
-    std::cout << "Corner Position and Orientation: " << std::endl;
+    //std::cout << "string = " << cubeCode << std::endl;
+    //std::cout << std::endl;
+    //std::cout << "Corner Position and Orientation: " << std::endl;
     for (int i = 0; i < cornerPos.size(); i++)
     {
-        std::cout << i << ": " << cornerPos[i] << " -> Orientation: " << cornerOrientation[i] << std::endl;
+        //std::cout << i << ": " << cornerPos[i] << " -> Orientation: " << cornerOrientation[i] << std::endl;
     }
-    std::cout << std::endl;
+    //std::cout << std::endl;
 
-    std::cout << std::endl;
-    std::cout << "Edge Position and Orientation: " << std::endl;
+    //std::cout << std::endl;
+    //std::cout << "Edge Position and Orientation: " << std::endl;
     for (int i = 0; i < edgePos.size(); i++)
     {
-        std::cout << i << ": " << edgePos[i] << " -> Orientation: " << edgeOrientation[i] << std::endl;
+        //std::cout << i << ": " << edgePos[i] << " -> Orientation: " << edgeOrientation[i] << std::endl;
     }
-    std::cout << std::endl;
+    //std::cout << std::endl;
 }
 
 std::vector<int> RubiksCubeProcessor::solveMoves()
@@ -1679,10 +1679,10 @@ std::vector<int> RubiksCubeProcessor::solveMoves()
             if (phase1Map.find(phaseID) != phase1Map.end())
             {
 
-                std::cout << "phase1ID Found!" << std::endl;
-                std::cout << "phase1D = " << phaseID << std::endl;
-                std::cout << "cubeCode before = " << cubeCode << std::endl;
-                std::cout << "Moves:" << std::endl;
+                //std::cout << "phase1ID Found!" << std::endl;
+                //std::cout << "phase1D = " << phaseID << std::endl;
+                //std::cout << "cubeCode before = " << cubeCode << std::endl;
+                //std::cout << "Moves:" << std::endl;
 
                 for (auto a : phase1Map.find(phaseID)->second)
                 {
@@ -1691,8 +1691,8 @@ std::vector<int> RubiksCubeProcessor::solveMoves()
                     theMoves.push_back(a);
                 }
 
-                std::cout << "cubeCode after = " << cubeCode << std::endl;
-                std::cout << std::endl;
+                //std::cout << "cubeCode after = " << cubeCode << std::endl;
+                //std::cout << std::endl;
             }
 
         }
@@ -1703,9 +1703,9 @@ std::vector<int> RubiksCubeProcessor::solveMoves()
             if (phase2Map.find(phaseID) != phase2Map.end())
             {
 
-                std::cout << "phase2ID Found!" << std::endl;
-                std::cout << "phase2D = " << phaseID << std::endl;
-                std::cout << "Moves:" << std::endl;
+                //std::cout << "phase2ID Found!" << std::endl;
+                //std::cout << "phase2D = " << phaseID << std::endl;
+                //std::cout << "Moves:" << std::endl;
                 for (auto a : phase2Map.find(phaseID)->second)
                 {
                     std::cout << a << ",";
@@ -1724,9 +1724,9 @@ std::vector<int> RubiksCubeProcessor::solveMoves()
             if (phase3Map.find(phaseID) != phase3Map.end())
             {
 
-                std::cout << "phase3ID Found!" << std::endl;
-                std::cout << "phase3D = " << phaseID << std::endl;
-                std::cout << "Moves:" << std::endl;
+                //std::cout << "phase3ID Found!" << std::endl;
+                //std::cout << "phase3D = " << phaseID << std::endl;
+                //std::cout << "Moves:" << std::endl;
                 for (auto a : phase3Map.find(phaseID)->second)
                 {
                     std::cout << a << ",";
@@ -1745,9 +1745,9 @@ std::vector<int> RubiksCubeProcessor::solveMoves()
             if (phase4Map.find(phaseID) != phase4Map.end())
             {
 
-                std::cout << "phase4ID Found!" << std::endl;
-                std::cout << "phase4D = " << phaseID << std::endl;
-                std::cout << "Moves:" << std::endl;
+                //std::cout << "phase4ID Found!" << std::endl;
+                //std::cout << "phase4D = " << phaseID << std::endl;
+                //std::cout << "Moves:" << std::endl;
                 for (auto a : phase4Map.find(phaseID)->second)
                 {
                     std::cout << a << ",";
@@ -1758,8 +1758,8 @@ std::vector<int> RubiksCubeProcessor::solveMoves()
                 std::cout << std::endl;
             }
             else {
-                std::cout << "phase4ID not found" << std::endl;
-                std::cout << std::endl;
+                //std::cout << "phase4ID not found" << std::endl;
+                //std::cout << std::endl;
                 break;
             }
         }
