@@ -27,9 +27,22 @@ interact with the simulation
 
 
 ## Arduino Setup
-![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/ArduinoSetup/Arduino1.png)
+The Arduino code is located in the ArduinoSetup folder.
+
+![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/ArduinoSetup/Arduino1.png?)
+![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/ArduinoSetup/Arduino2.png)
+
+**Keys**
+- a - Down
+- b - Up
+- c - Right
+- d - Left
+- e - Back
+- f - Front
+- Potentiometer - Controls z-rotation angle of  cube.
 ## Screenshots
 
-![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/Screenshots/Rubiks1.png)
-![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/Screenshots/Rubiks2.png)
+![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/Screenshots/Rubiks1.png?)
+
+![App Screenshot](https://github.com/epnoel/Rubiks-Cube-Simulation-Solver/blob/master/CubeProjection/Screenshots/Rubiks2.png?)
 
